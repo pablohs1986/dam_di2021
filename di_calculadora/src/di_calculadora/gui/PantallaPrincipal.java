@@ -45,7 +45,8 @@ public class PantallaPrincipal extends javax.swing.JFrame {
     }
     
     private Boolean validarOperacion(String operacionAValidar) {
-        String patron = "(\\d+)[+-](\\d+)";
+//        String patron = "(\\d+)[+-](\\d+)";
+        String patron = "(\\d+[+-/*]\\d+)(([+-/*]\\d+)+)?";
         return operacionAValidar.matches(patron) ? true : false;
     }
     
@@ -415,7 +416,7 @@ public class PantallaPrincipal extends javax.swing.JFrame {
                 Operacion operacion = new Operacion();
                 operacion.setOperacion(cadenaOperacion);
                 SimpleDateFormat formateadorDia = new SimpleDateFormat("HH:mm:ss");
-                Date fecha = new Date(Calendar.getInstance().getTimeInMillis());
+                Date fecha = new Date();
                 operacion.setHora(formateadorDia.format(fecha));
                 operacion.setFecha(fecha);
                 

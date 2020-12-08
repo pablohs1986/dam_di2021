@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<toc version="1.0">
+<tocitem text="Validacion expresion APP" target="aplicacion">
+<tocitem text="Ventana principal" target="principal"/>
+<tocitem text="Ventana lista" target="secundaria"/>
+</tocitem>
+</toc>
