@@ -1,0 +1,17 @@
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\bin\Debug\VideoAppFinalRound2.exe.config
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\bin\Debug\VideoAppFinalRound2.exe
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\bin\Debug\VideoAppFinalRound2.pdb
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\VideoAppFinalRound2.csprojAssemblyReference.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\DialogoAltaLibro.g.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\MainWindow.g.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\App.g.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\VideoAppFinalRound2_MarkupCompile.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\VideoAppFinalRound2_MarkupCompile.lref
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\DialogoAltaLibro.baml
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\MainWindow.baml
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\VideoAppFinalRound2.g.resources
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\VideoAppFinalRound2.Properties.Resources.resources
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\VideoAppFinalRound2.csproj.GenerateResource.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\VideoAppFinalRound2.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\VideoAppFinalRound2.exe
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideoAppFinalRound2\VideoAppFinalRound2\obj\Debug\VideoAppFinalRound2.pdb

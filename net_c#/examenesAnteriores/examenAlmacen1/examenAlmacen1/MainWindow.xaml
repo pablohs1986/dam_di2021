@@ -1,0 +1,26 @@
+﻿<Window x:Class="examenAlmacen1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:examenAlmacen1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu x:Name="menuMenu" HorizontalAlignment="Center" Height="31" Margin="10,0" VerticalAlignment="Top" Width="774">
+            <MenuItem x:Name="miMenu" Header="Insertar" Height="28" Width="100" Click="miMenu_Click"/>
+        </Menu>
+        <DataGrid x:Name="dgProductos" ItemsSource="{Binding Path=listaProductos}" AutoGenerateColumns="False" CanUserAddRows="False" HorizontalAlignment="Center" Height="260" Margin="10,82,10,0" VerticalAlignment="Top" Width="774">
+            <DataGrid.Columns>
+                <DataGridTextColumn x:Name="Producto" Header="Producto" Binding="{Binding Path=Producto}"/>
+                <DataGridTextColumn x:Name="Categoria" Header="Categoría" Binding="{Binding Path=Categoria}"/>
+                <DataGridTextColumn x:Name="Stock" Header="Stock" Binding="{Binding Path=Stock}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox HorizontalAlignment="Center" Height="36" Margin="10,36,10,0" TextWrapping="Wrap" Text="ALMACÉN" VerticalAlignment="Top" Width="774" TextChanged="TextBox_TextChanged" FontWeight="Bold" TextAlignment="Center" FontSize="22" Foreground="#FFF70707"/>
+        <Button x:Name="btnSale" Content="Sale" HorizontalAlignment="Left" Margin="693,372,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" Click="btnSale_Click"/>
+        <Button x:Name="btnEntra" Content="Entra" HorizontalAlignment="Left" Margin="580,372,0,0" VerticalAlignment="Top" Width="75" Visibility="Hidden" Click="btnEntra_Click"/>
+        <ComboBox x:Name="cbProductos" HorizontalAlignment="Center" ItemsSource="{Binding Path=listaProductos}" Margin="43,370,323,0" VerticalAlignment="Top" Width="428" SelectionChanged="cbProductos_SelectionChanged"/>
+
+    </Grid>
+</Window>

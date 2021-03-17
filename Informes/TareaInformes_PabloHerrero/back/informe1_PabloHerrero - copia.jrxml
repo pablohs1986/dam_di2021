@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="informe1_PabloHerrero" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d7838661-2d43-4c5c-8a98-788c282ca323">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="pDNI" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[select * from datospersonales DP inner join vehiculos V on DP.idDatosPersonales=V.IdDatosPersonales where DP.dni = $P{pDNI} Order by DP.dni]]>
+	</queryString>
+	<field name="idDatosPersonales" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dni" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nombre" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellido1" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="apellido2" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="idVehiculo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="matricula" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="marca" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="modelo" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="bastidor" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="contadorCoches" class="java.lang.Integer" resetType="Group" resetGroup="Cliente" calculation="Count">
+		<variableExpression><![CDATA[$F{idVehiculo}]]></variableExpression>
+	</variable>
+	<variable name="totalCoches" class="java.lang.Integer" calculation="Count">
+		<variableExpression><![CDATA[$V{totalCoches}+1]]></variableExpression>
+		<initialValueExpression><![CDATA[0]]></initialValueExpression>
+	</variable>
+	<group name="Cliente">
+		<groupExpression><![CDATA[$F{dni}]]></groupExpression>
+		<groupHeader>
+			<band height="33">
+				<rectangle>
+					<reportElement x="0" y="0" width="555" height="33" backcolor="#999999" uuid="3ba639e3-19a6-4c62-89dc-d631f15d69e0"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="163" y="0" width="116" height="33" uuid="4d3ab123-1dcb-47b5-b994-d8654d868791"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font fontName="Monospaced" size="10" isBold="true" isStrikeThrough="false"/>
+					</textElement>
+					<text><![CDATA[Marca]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="418" y="0" width="116" height="33" uuid="7a4664d6-3a30-4920-b673-161e2742cf92"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font fontName="Monospaced" size="10" isBold="true" isStrikeThrough="false"/>
+					</textElement>
+					<text><![CDATA[Bastidor]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="293" y="0" width="114" height="33" uuid="2883dd17-0c8d-4f09-9a39-c87960ca145f"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font fontName="Monospaced" size="10" isBold="true" isStrikeThrough="false"/>
+					</textElement>
+					<text><![CDATA[Modelo]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="47" y="0" width="116" height="33" uuid="7faaa86f-12db-4b47-b3c5-f4456df5f1ef"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle" markup="none">
+						<font fontName="Monospaced" size="10" isBold="true" isStrikeThrough="false"/>
+					</textElement>
+					<text><![CDATA[Matrícula]]></text>
+				</staticText>
+			</band>
+		</groupHeader>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<rectangle radius="10">
+				<reportElement x="111" y="0" width="333" height="79" backcolor="#3399FF" uuid="cf0fb43e-49f2-4d75-8dc1-351af35fdeee"/>
+			</rectangle>
+			<staticText>
+				<reportElement mode="Transparent" x="111" y="0" width="333" height="79" forecolor="#000000" uuid="84bbba55-6ef9-4489-abb2-259b8889ce3b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Monospaced" size="32" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[TALLERES HERRERO]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="99" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="555" height="68" uuid="ad3cbeaa-2eb3-4be2-b4e7-24475072adf6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Monospaced" size="18" isBold="true" isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Listado de vehículos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="415" y="68" width="44" height="23" uuid="dc1e3780-29c0-4388-ad96-41b018d882dc"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font fontName="Monospaced" size="10"/>
+				</textElement>
+				<text><![CDATA[Fecha:]]></text>
+			</staticText>
+			<textField pattern="dd/MM/yyyy">
+				<reportElement mode="Transparent" x="466" y="68" width="90" height="23" forecolor="#000000" backcolor="#FFFFFF" uuid="f9e393ef-90eb-427d-bc16-81d0d4e07fe8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Monospaced" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="88">
+			<staticText>
+				<reportElement x="22" y="0" width="44" height="33" uuid="2c7532a6-fae2-428f-9374-028e36053416"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Monospaced" size="10"/>
+				</textElement>
+				<text><![CDATA[DNI:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="363" y="33" width="191" height="33" uuid="e73ab75f-a138-4e7d-91c7-7417c7571409"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Monospaced"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="22" y="33" width="44" height="33" uuid="67f06f2c-6075-4f3d-8a3b-633a5868d7c8"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Monospaced" size="10"/>
+				</textElement>
+				<text><![CDATA[Nombre: ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="1" y="2" width="553" height="1" uuid="efc39110-51e3-4ff1-9c90-f918d1c5e665"/>
+			</line>
+			<line>
+				<reportElement x="554" y="2" width="1" height="64" uuid="5d700514-97bc-4ff1-a5db-e0a4cd0a4ab7"/>
+			</line>
+			<staticText>
+				<reportElement x="319" y="33" width="44" height="33" uuid="bd96617d-0143-41a8-b557-acd47125467b"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Monospaced" size="10"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="292" y="34" width="1" height="32" uuid="7d57a8c5-5b11-4e75-8d3f-b63cfb4e5458"/>
+			</line>
+			<textField>
+				<reportElement x="66" y="33" width="226" height="33" uuid="f97f8b09-9d2f-4cbc-be04-06a4ada5277d"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Monospaced"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombre} + " " + $F{apellido1} + " " + $F{apellido2}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="2" y="33" width="553" height="1" uuid="baf1c846-be59-40fd-b063-a6e89a77141a"/>
+			</line>
+			<line>
+				<reportElement x="2" y="66" width="552" height="1" uuid="8f6dd2d1-96cc-460b-bd83-75c3bd059117"/>
+			</line>
+			<line>
+				<reportElement x="1" y="2" width="1" height="64" uuid="16cafe3b-f293-4715-b8a9-3122c7b1b8be"/>
+			</line>
+			<textField>
+				<reportElement x="66" y="0" width="155" height="33" uuid="b940fa3a-4b34-4848-8dcd-0f0ce3856311"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Monospaced" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dni}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="33" backcolor="#CCCCCC" uuid="fbfd25f4-bfd9-40de-aadc-bf611fee9bf8"/>
+			</rectangle>
+			<textField>
+				<reportElement x="47" y="0" width="116" height="33" uuid="9894b692-7869-4fec-a8ff-f72acd9d222b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Monospaced"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{matricula}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="163" y="0" width="115" height="33" uuid="b8c54798-b899-468b-864b-839d5cf59ac9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Monospaced"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{marca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="293" y="0" width="114" height="33" uuid="979a0e96-e1ba-4d74-b7aa-d4cd70c4030c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Monospaced"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{modelo}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="418" y="0" width="116" height="33" uuid="eb5502b9-980f-4592-a971-ac1eea32608e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Monospaced"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{bastidor}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="0" width="46" height="33" uuid="fcb09643-b82a-48df-9af4-2d92fff4f9dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Monospaced"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{contadorCoches}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="436" y="0" width="80" height="21" uuid="f36fe0ff-2d44-4f26-bc1c-5113fd24d204"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+			<textField evaluationTime="Report">
+				<reportElement x="516" y="0" width="40" height="21" uuid="407329b2-74fa-48f0-bf24-fc9e41134afc"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="56" splitType="Stretch">
+			<staticText>
+				<reportElement x="389" y="0" width="104" height="56" uuid="dee3da62-92e1-4aea-929a-fbaf7ddb76c9"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle">
+					<font fontName="Monospaced" size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TOTAL VEHÍCULOS:]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="493" y="0" width="61" height="56" forecolor="#000000" backcolor="#FFFFFF" uuid="df3ee44e-7d46-4722-885e-ca5dbb0c9bf5"/>
+				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Monospaced" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$V{totalCoches}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

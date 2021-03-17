@@ -1,0 +1,14 @@
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\bin\Debug\Video6_dataGrid.exe.config
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\bin\Debug\Video6_dataGrid.exe
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\bin\Debug\Video6_dataGrid.pdb
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\MainWindow.g.cs
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\App.g.cs
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\Video6_dataGrid_MarkupCompile.cache
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\Video6_dataGrid_MarkupCompile.lref
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\MainWindow.baml
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\Video6_dataGrid.g.resources
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\Video6_dataGrid.Properties.Resources.resources
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\Video6_dataGrid.csproj.GenerateResource.cache
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\Video6_dataGrid.csproj.CoreCompileInputs.cache
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\Video6_dataGrid.exe
+C:\Users\pablo\source\repos\Video6_dataGrid\Video6_dataGrid\obj\Debug\Video6_dataGrid.pdb

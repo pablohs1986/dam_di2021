@@ -1,0 +1,14 @@
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\bin\Debug\Video4_binding.exe.config
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\bin\Debug\Video4_binding.exe
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\bin\Debug\Video4_binding.pdb
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\MainWindow.g.cs
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\App.g.cs
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\Video4_binding_MarkupCompile.cache
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\Video4_binding_MarkupCompile.lref
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\MainWindow.baml
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\Video4_binding.g.resources
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\Video4_binding.Properties.Resources.resources
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\Video4_binding.csproj.GenerateResource.cache
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\Video4_binding.csproj.CoreCompileInputs.cache
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\Video4_binding.exe
+C:\Users\pablo\source\repos\Video4_binding\Video4_binding\obj\Debug\Video4_binding.pdb

@@ -1,0 +1,20 @@
+﻿<Window x:Class="VideosAppFinal.DialogoLibro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:VideosAppFinal"
+        mc:Ignorable="d"
+        Title="DialogoLibro" Height="345.2" Width="452">
+    <Grid>
+        <Label x:Name="labelTitulo" Content="Título:" HorizontalAlignment="Left" Margin="78,48,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelAutor" Content="Autor:" HorizontalAlignment="Left" Margin="80,98,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelFechaEntrada" Content="Fecha de entrada:" HorizontalAlignment="Left" Margin="80,148,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxTitulo" Validation.Error="validation_Error" Text="{Binding Path=Titulo, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="157,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBoxTitulo_TextChanged"/>
+        <TextBox x:Name="textBoxAutor" Validation.Error="validation_Error" Text="{Binding Path=Autor, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="157,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="datePickerFechaDeEntrada" SelectedDate="{Binding Path=FechaEntrada}" HorizontalAlignment="Left" Margin="216,150,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonAceptar" Content="Acecptar" HorizontalAlignment="Left" Margin="122,232,0,0" VerticalAlignment="Top" Width="75" Click="buttonAceptar_Click"/>
+        <Button x:Name="buttonCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="243,232,0,0" VerticalAlignment="Top" Width="75" Click="buttonCancelar_Click"/>
+
+    </Grid>
+</Window>

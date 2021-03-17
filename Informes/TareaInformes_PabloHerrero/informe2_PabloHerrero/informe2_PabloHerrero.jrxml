@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="informe2_PabloHerrero" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="278b63fe-faed-4820-8fd2-efaa4764c401">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="96"/>
+	<parameter name="pNumeroFactura" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT A.idAlbaran, A.numFactura, A.fechaFact, A.clienteAlb, A.dniCliente, A.calleCliente, A.localidadCliente,
+A.provinciaCliente, A.cpCliente, A.empresa, A.cifEmpresa, A.calleEmpresa, A.localidadEmpresa,
+A.provinciaEmpresa, A.cpEmpresa, A.matricula, A.km, A.iva, A.formaPago, D.t_garantia, D.t_lopd
+FROM albaran A INNER JOIN datfacturacion D ON A.idDatosEmpresa=D.idContacto WHERE A.numFactura = $P{pNumeroFactura} ORDER BY A.numFactura]]>
+	</queryString>
+	<field name="idAlbaran" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="numFactura" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="fechaFact" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="clienteAlb" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="dniCliente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="calleCliente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="localidadCliente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="provinciaCliente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpCliente" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="empresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cifEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="calleEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="localidadEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="provinciaEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="cpEmpresa" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="matricula" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="km" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="iva" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="formaPago" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t_garantia" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="t_lopd" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<variable name="vSubReportTotalFactura" class="java.lang.Double" calculation="System"/>
+	<variable name="vIVA" class="java.lang.Double">
+		<variableExpression><![CDATA[$V{vSubReportTotalFactura}*$F{iva}]]></variableExpression>
+	</variable>
+	<group name="gFactura">
+		<groupExpression><![CDATA[$F{idAlbaran}]]></groupExpression>
+		<groupHeader>
+			<band height="222">
+				<rectangle radius="10">
+					<reportElement x="463" y="19" width="94" height="20" uuid="2b27e25a-8e31-4b14-9fea-bb0861a398ec"/>
+				</rectangle>
+				<rectangle radius="10">
+					<reportElement x="336" y="19" width="80" height="20" uuid="1d9dbb25-d70b-4fcd-9fc5-d3ff110ecf0d"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="95" y="49" width="196" height="33" forecolor="#0000CC" uuid="3cab5b1f-ad62-449d-b194-f165dc34f006"/>
+					<box leftPadding="5"/>
+					<textElement verticalAlignment="Top">
+						<font size="22" isBold="true"/>
+					</textElement>
+					<text><![CDATA[Talleres Herrero]]></text>
+				</staticText>
+				<frame>
+					<reportElement x="49" y="113" width="215" height="80" uuid="e29f6691-460c-42b6-b5f9-903f1af8f02d"/>
+					<rectangle radius="15">
+						<reportElement x="0" y="0" width="215" height="80" uuid="64d8887e-9189-4abc-8d67-92767560347a"/>
+					</rectangle>
+					<textField>
+						<reportElement x="0" y="40" width="215" height="20" uuid="aed6f438-5cb7-4c4a-a842-966c0eaad84f"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Provincia: " + $F{provinciaEmpresa}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="0" y="0" width="215" height="20" uuid="5f740b78-319a-4378-8753-b081bd2c7b8a"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{cifEmpresa}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="0" y="20" width="215" height="20" uuid="a163bebc-6b7b-453e-9696-c6e2d4cb264f"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Dirección: " + $F{calleEmpresa}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="0" y="60" width="215" height="20" uuid="af1dbf4c-3ef4-4925-a561-1ee0bc6f2710"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA["C.P./Localidad: ("+$F{cpEmpresa}+") "+$F{localidadEmpresa}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<line>
+					<reportElement x="291" y="0" width="1" height="222" uuid="a8736985-ad9a-4a38-8f73-37d024acf96b"/>
+				</line>
+				<staticText>
+					<reportElement x="298" y="19" width="38" height="20" forecolor="#FF0033" uuid="e1770862-7886-4249-b7bb-1b177f153ab5"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Fecha:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="423" y="19" width="50" height="20" forecolor="#FF0033" uuid="0407e2f1-59f9-4346-aad3-bd9353c4df8b"/>
+					<textElement verticalAlignment="Middle"/>
+					<text><![CDATA[Factura:]]></text>
+				</staticText>
+				<textField pattern="dd/MM/yyyy">
+					<reportElement x="336" y="19" width="80" height="20" uuid="03c74a48-24a1-404e-a412-861411cc3f8d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="463" y="19" width="94" height="20" uuid="d36658f8-ac7a-4e06-ac23-4894dfc47be6"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font size="12" isUnderline="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{numFactura}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="292" y="49" width="265" height="20" forecolor="#666666" uuid="aec2f24d-ad6b-4b8f-95e4-f6d143fd1ffc"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Datos cliente:]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="293" y="170" width="265" height="20" forecolor="#666666" uuid="c67562e9-9af4-469e-9d52-384602ab8707"/>
+					<textElement textAlignment="Center" verticalAlignment="Bottom">
+						<font size="10"/>
+					</textElement>
+					<text><![CDATA[Datos vehículo:]]></text>
+				</staticText>
+				<frame>
+					<reportElement x="294" y="72" width="262" height="101" uuid="b3a415ea-3600-4459-80ec-99a376c7256c"/>
+					<rectangle radius="15">
+						<reportElement x="5" y="0" width="252" height="100" uuid="8d74a7c4-4fe4-47c7-9b3d-3df6c0e8472f"/>
+					</rectangle>
+					<textField>
+						<reportElement x="5" y="80" width="252" height="20" uuid="5aafc44b-5d03-419e-87da-4455cf1d1cd0"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA["C.P./Localidad: ("+$F{cpCliente}+") "+$F{localidadCliente}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="5" y="0" width="252" height="20" uuid="c602476b-3850-4ce2-846f-9defaa0d78db"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{clienteAlb}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="5" y="20" width="252" height="20" uuid="273d9d3d-a629-4c27-bc78-9ab830d55c69"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA[$F{dniCliente}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="5" y="40" width="252" height="20" uuid="be185afc-2a7f-4502-a75f-2aea0b604d48"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Dirección: " + $F{calleCliente}]]></textFieldExpression>
+					</textField>
+					<textField>
+						<reportElement x="5" y="60" width="252" height="20" uuid="ebb53354-4975-41f6-a68b-682b6295448f"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Provincia: " + $F{provinciaCliente}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<frame>
+					<reportElement x="294" y="193" width="262" height="21" uuid="c43550c0-c1d4-458c-9e4d-ec13c7ffc3fe"/>
+					<rectangle radius="15">
+						<reportElement x="5" y="0" width="252" height="21" uuid="88e6da8f-8235-4a5c-a171-ddc6015d33a5"/>
+					</rectangle>
+					<textField>
+						<reportElement x="4" y="0" width="253" height="21" uuid="2c166908-dd69-4237-8263-f4d93268cd5d"/>
+						<textElement textAlignment="Center" verticalAlignment="Middle">
+							<font size="12"/>
+						</textElement>
+						<textFieldExpression><![CDATA["Matrícula: " + $F{matricula} + " Km: " + $F{km}]]></textFieldExpression>
+					</textField>
+				</frame>
+				<image hAlign="Center" vAlign="Middle">
+					<reportElement x="0" y="12" width="95" height="92" uuid="bd29b5b7-893f-4124-9f64-bb93f1ea167c"/>
+					<imageExpression><![CDATA["TALLERES.jpeg"]]></imageExpression>
+				</image>
+				<line>
+					<reportElement x="291" y="45" width="264" height="1" uuid="bb78f73d-f3e8-498a-a490-90ecca874fd9"/>
+				</line>
+			</band>
+		</groupHeader>
+		<groupFooter>
+			<band height="298">
+				<staticText>
+					<reportElement x="233" y="10" width="100" height="20" forecolor="#666666" uuid="6548e9bb-ad2c-4ca7-b35d-b2af1bd5ee28"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Base Imponible]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="333" y="10" width="100" height="20" forecolor="#666666" uuid="973a5970-429f-406f-bbf2-58856eb2d51d"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[IVA 21%]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="433" y="10" width="114" height="20" uuid="3c535d4d-96cd-4271-b388-4660fddbb6fc"/>
+					<textElement textAlignment="Right" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Total Importe Factura]]></text>
+				</staticText>
+				<textField>
+					<reportElement x="49" y="30" width="100" height="20" forecolor="#666666" uuid="a1f57f73-2700-4304-a117-86538f215963"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<textFieldExpression><![CDATA["Forma Pago: " + $F{formaPago}]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Band" pattern="###0.00€">
+					<reportElement mode="Opaque" x="433" y="30" width="114" height="20" backcolor="#CCCCCC" uuid="a3beea3a-cbfe-4c9f-9775-c6929f84a831"/>
+					<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="4">
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$V{vSubReportTotalFactura}*(($F{iva}+100)/100)]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Band" pattern="###0.00€">
+					<reportElement mode="Opaque" x="333" y="30" width="100" height="20" backcolor="#CCCCCC" uuid="1e4b3121-e0ab-433e-8332-c69911ad0eae"/>
+					<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="4">
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$V{vSubReportTotalFactura}*($F{iva}/100)]]></textFieldExpression>
+				</textField>
+				<textField evaluationTime="Band" pattern="###0.00€">
+					<reportElement mode="Opaque" x="233" y="30" width="100" height="20" backcolor="#CCCCCC" uuid="79829bfe-f3fe-446c-b8fc-8bde13f3bd07"/>
+					<box topPadding="0" leftPadding="0" bottomPadding="0" rightPadding="4">
+						<pen lineWidth="1.0"/>
+						<topPen lineWidth="1.0"/>
+						<leftPen lineWidth="1.0"/>
+						<bottomPen lineWidth="1.0"/>
+						<rightPen lineWidth="1.0"/>
+					</box>
+					<textElement textAlignment="Right" verticalAlignment="Middle"/>
+					<textFieldExpression><![CDATA[$V{vSubReportTotalFactura}]]></textFieldExpression>
+				</textField>
+				<rectangle>
+					<reportElement x="205" y="81" width="165" height="59" uuid="63ba1d36-54f8-4382-91c1-4ccfbc8eae3c"/>
+				</rectangle>
+				<rectangle>
+					<reportElement x="382" y="81" width="165" height="59" uuid="6db51719-35a4-4af0-9a1d-432c763200ac"/>
+				</rectangle>
+				<staticText>
+					<reportElement x="205" y="61" width="165" height="20" forecolor="#666666" uuid="a11dd16a-777f-4c50-8e26-c25728152628"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Firma Conforme Cliente]]></text>
+				</staticText>
+				<staticText>
+					<reportElement x="382" y="61" width="165" height="20" forecolor="#666666" uuid="0503744c-670b-467f-a2f2-2c6e6738d029"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[Firma y sello Taller]]></text>
+				</staticText>
+			</band>
+		</groupFooter>
+	</group>
+	<detail>
+		<band height="120" splitType="Stretch">
+			<frame>
+				<reportElement x="0" y="0" width="555" height="119" uuid="225d0246-f116-4c5e-8ee9-e3524a403d7e"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<subreport>
+					<reportElement x="0" y="0" width="555" height="119" uuid="de339193-eb13-4b84-b643-419a56ebe028"/>
+					<subreportParameter name="pIdAlbaran">
+						<subreportParameterExpression><![CDATA[$F{idAlbaran}]]></subreportParameterExpression>
+					</subreportParameter>
+					<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+					<returnValue subreportVariable="vTotalFactura" toVariable="vSubReportTotalFactura"/>
+					<returnValue subreportVariable="vTotalFactura" toVariable="vIVA"/>
+					<subreportExpression><![CDATA["C:\\Users\\pablo\\Documents\\DAM\\Segundo\\DI\\dam_di2021\\Informes\\TareaInformes_PabloHerrero\\informe2_PabloHerrero\\detalleFactura.jasper"]]></subreportExpression>
+				</subreport>
+			</frame>
+		</band>
+	</detail>
+	<summary>
+		<band height="115">
+			<textField>
+				<reportElement x="0" y="0" width="555" height="50" uuid="061d54e1-b541-4b37-a0a7-57ac6558c97d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{t_garantia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="50" width="555" height="65" uuid="3b9afc8c-8452-40cb-96d4-03a4ec7d92f4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{t_lopd}]]></textFieldExpression>
+			</textField>
+		</band>
+	</summary>
+</jasperReport>

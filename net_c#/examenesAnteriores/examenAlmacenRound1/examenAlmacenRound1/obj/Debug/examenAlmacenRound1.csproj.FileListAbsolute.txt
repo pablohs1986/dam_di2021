@@ -1,0 +1,17 @@
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\examenAlmacenRound1.csprojAssemblyReference.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\MainWindow.g.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\VentanaInsertarProductos.g.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\App.g.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\examenAlmacenRound1_MarkupCompile.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\examenAlmacenRound1_MarkupCompile.lref
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\bin\Debug\examenAlmacenRound1.exe.config
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\bin\Debug\examenAlmacenRound1.exe
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\bin\Debug\examenAlmacenRound1.pdb
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\MainWindow.baml
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\VentanaInsertarProductos.baml
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\examenAlmacenRound1.g.resources
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\examenAlmacenRound1.Properties.Resources.resources
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\examenAlmacenRound1.csproj.GenerateResource.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\examenAlmacenRound1.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\examenAlmacenRound1.exe
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\examenesAnteriores\examenAlmacenRound1\examenAlmacenRound1\obj\Debug\examenAlmacenRound1.pdb

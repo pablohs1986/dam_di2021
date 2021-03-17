@@ -1,0 +1,17 @@
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\bin\Debug\VideosAppFinal.exe.config
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\bin\Debug\VideosAppFinal.exe
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\bin\Debug\VideosAppFinal.pdb
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\VideosAppFinal.csprojAssemblyReference.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\MainWindow.g.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\App.g.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\VideosAppFinal_MarkupCompile.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\VideosAppFinal_MarkupCompile.lref
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\MainWindow.baml
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\VideosAppFinal.g.resources
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\VideosAppFinal.Properties.Resources.resources
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\VideosAppFinal.csproj.GenerateResource.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\VideosAppFinal.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\VideosAppFinal.exe
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\VideosAppFinal.pdb
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\DialogoLibro.g.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\dam_di2021\net_c#\actividades\VideosAppFinal\VideosAppFinal\obj\Debug\DialogoLibro.baml

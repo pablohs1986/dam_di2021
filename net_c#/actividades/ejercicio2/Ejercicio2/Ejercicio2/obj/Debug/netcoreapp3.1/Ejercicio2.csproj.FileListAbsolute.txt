@@ -1,0 +1,13 @@
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\bin\Debug\netcoreapp3.1\Ejercicio2.exe
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\bin\Debug\netcoreapp3.1\Ejercicio2.deps.json
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\bin\Debug\netcoreapp3.1\Ejercicio2.runtimeconfig.json
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\bin\Debug\netcoreapp3.1\Ejercicio2.runtimeconfig.dev.json
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\bin\Debug\netcoreapp3.1\Ejercicio2.dll
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\bin\Debug\netcoreapp3.1\Ejercicio2.pdb
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.csprojAssemblyReference.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.AssemblyInfoInputs.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.AssemblyInfo.cs
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.csproj.CoreCompileInputs.cache
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.dll
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.pdb
+C:\Users\pablo\Documents\DAM\Segundo\DI\Evaluación 2\ejercicio2\Ejercicio2\Ejercicio2\obj\Debug\netcoreapp3.1\Ejercicio2.genruntimeconfig.cache

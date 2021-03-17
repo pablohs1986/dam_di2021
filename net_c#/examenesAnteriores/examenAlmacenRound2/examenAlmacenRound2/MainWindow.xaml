@@ -1,0 +1,24 @@
+﻿<Window x:Class="examenAlmacenRound2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:examenAlmacenRound2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="216*"/>
+            <RowDefinition Height="205*"/>
+        </Grid.RowDefinitions>
+        <Menu HorizontalAlignment="Center" Height="45" VerticalAlignment="Top" Width="794">
+            <MenuItem x:Name="miInsertar" Header="Insertar" Height="45" Width="100" Click="miInsertar_Click"/>
+        </Menu>
+        <TextBox x:Name="tbTitulo" HorizontalAlignment="Center" Height="33" Margin="10,50,10,0" TextWrapping="Wrap" Text="ALMACÉN" VerticalAlignment="Top" Width="774" Foreground="#FFFF0101" FontSize="22" TextAlignment="Center"/>
+        <DataGrid x:Name="dgProductos" ItemsSource="{Binding Path=listaProductos}" HorizontalAlignment="Center" Height="255" Margin="10,88,10,0" VerticalAlignment="Top" Width="774" Grid.RowSpan="2"/>
+        <ComboBox x:Name="cbProductos" ItemsSource="{Binding Path=listaProductos}" HorizontalAlignment="Left" Margin="217,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="309"/>
+        <Button x:Name="btnEntra" Content="Entra" HorizontalAlignment="Left" Margin="577,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnSale" Content="Sale" HorizontalAlignment="Left" Margin="684,152,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>

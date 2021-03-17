@@ -1,0 +1,18 @@
+﻿<Window x:Class="examenAlmacenRound1.VentanaInsertarProductos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:examenAlmacenRound1"
+        mc:Ignorable="d"
+        Title="VentanaInsertarProductos" Height="232.574" Width="240.396">
+    <Grid>
+        <Label x:Name="lbProducto" Content="Producto:" HorizontalAlignment="Left" Margin="18,26,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lbCategoria" Content="Categoría:" HorizontalAlignment="Left" Margin="18,66,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnInsertar" Content="Insertar" HorizontalAlignment="Left" Margin="44,138,0,0" VerticalAlignment="Top" Width="74" Click="btnInsertar_Click"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="143,138,0,0" VerticalAlignment="Top" Width="74" Click="btnCancelar_Click"/>
+        <TextBox x:Name="tbProducto" Validation.Error="validation_Error" Text="{Binding Path=Producto, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="97,29,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbCategoria" Validation.Error="validation_Error" Text="{Binding Path=Categoria, NotifyOnValidationError=True, ValidatesOnDataErrors=True}" HorizontalAlignment="Left" Height="23" Margin="97,66,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="PruebaExamen2evalPablo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PruebaExamen2evalPablo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="591.291" Width="630.717">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="275*"/>
+            <RowDefinition Height="287*"/>
+        </Grid.RowDefinitions>
+        <Menu x:Name="menuPantallaPrincipal" Height="37" VerticalAlignment="Top" Margin="10,0" HorizontalAlignment="Center" Width="605">
+            <MenuItem x:Name="menuAñadir" Header="Añadir" Height="37" Width="100" Click="menuAñadir_Click"/>
+        </Menu>
+        <ComboBox x:Name="cbSelector" ItemsSource="{Binding Path=ListaPersonas}" HorizontalAlignment="Center" Margin="21,196,255,0" VerticalAlignment="Top" Width="349" Height="40" Grid.Row="1" SelectionChanged="cbSelector_SelectionChanged"/>
+        <Button x:Name="btnEntra" Content="Entra" Margin="396,196,138,0" Grid.Row="1" Height="40" VerticalAlignment="Top" Click="btnEntra_Click"/>
+        <Button x:Name="btnSale" Content="Sale" Margin="503,196,0,0" Grid.Row="1" HorizontalAlignment="Left" Width="86" Height="40" VerticalAlignment="Top" Click="btnSale_Click"/>
+        <TextBox x:Name="tbTitulo" Margin="21,54,22,181" TextWrapping="Wrap" Text="BLABLABLALB" TextChanged="TextBox_TextChanged" HorizontalAlignment="Center" Width="582"/>
+        <DataGrid x:Name="dgDatos" ItemsSource="{Binding Path=ListaPersonas}" HorizontalAlignment="Left" Height="323" Margin="21,121,0,0" VerticalAlignment="Top" Width="582" Grid.RowSpan="2" SelectionChanged="dgDatos_SelectionChanged" CanUserAddRows="False"/>
+
+    </Grid>
+</Window>
